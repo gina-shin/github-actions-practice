@@ -6,9 +6,9 @@ on:
       - 'main'
     paths:
       - 'admin/**'
-jobs:
-  deploy-production:
-    runs-on: ubuntu-latest
+  jobs:
+    deploy-production:
+      runs-on: ubuntu-latest
 
     steps:
       - name: Read .nvmrc
