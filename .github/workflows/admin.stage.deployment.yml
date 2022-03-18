@@ -2,17 +2,17 @@ name: on-admin-staging-merge
 on:
   push:
     branches:
-      - 'staging'
+      - "staging"
     paths:
-      - 'admin/**'
+      - "admin/**"
 jobs:
   deploy-production:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Setup Node
-      uses: actions/setup-node@v2
-      with:
-        node-version-file: '../.nvmrc'
-  
-    - run: yarn install
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version-file: "../.nvmrc"
+
+      - run: yarn install
